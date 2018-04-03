@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/ev-styles.css" />
+    <!--Font Awesome Icons-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Entre Vecinos | Contactanos</title>
+  </head>
+  <body>
+    <!--jQuery and bootstrap JS-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+      <!--Navbar-->
+        <nav class="navbar ev-nav inner-page-nav">
+                <div class="container-fluid container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"><img class="img-responsive" src="images/full-logo-nav.png"/></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li class="active"><a href="index.html">Inicio</a></li>
+                      <li><a href="directorio.html">Directorio</a></li> 
+                      <li><a href="contactanos.html">Contáctanos</a></li> 
+                    </ul>
+                  </div>
+                </div>
+       </nav><!--End Navbar-->
+       <div class="innerpage-head" style="background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/img_skyscraper.jpg'); background-size: cover;">
+            <div class="container">
+                <h2>Contactanos</h2>
+                <p>Sed risus pretium quam vulputate dignissim suspendisse in est ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                
+            </div>         
+       </div>
+
+       <div id="contact-section">
+           <div class="container">
+                <form>
+                    <div class="form-group col-md-6">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Correo Electronico</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="phone">Telefono</label>
+                        <input type="tel" class="form-control" id="phone">
+                    </div>
+                    <div class="form-group col-md-6">
+                            <label for="subject">Asunto</label>
+                            <input type="text" class="form-control" id="subject">
+                    </div>
+                    <div class="form-group col-md-12">
+                            <label for="message">Mensaje</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                    </div>
+                    <div class="form-group col-md-2 col-md-offset-5">
+                         <input class="send-button" type="submit" value="Enviar">
+                    </div>
+                   
+                </form>
+           </div>
+           
+       </div>
+       
+       <footer>
+        
+              <div id="footer-nav">
+                 <div class="container">
+                     <ul>
+                      <li><a href="" target="_blank">Phoenix, AZ</a></li>
+                      <li><a href="" target="_blank">Las Vegas, NV</a></li>
+                      <li><a href="" target="_blank">Contactanos</a></li>
+                      
+                      </ul>
+                 </div>
+                  
+              </div>
+              
+            <div id ="copyright-div" class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h4 class="copyright">&copy;2018 <strong>Entre Vecinos</strong>. All Rights Reserved</h4>
+                  </div>
+              </div>
+          </div>
+      </footer>     
+
+       <script>
+          // init Isotope
+          var $grid = $('#directory-list').isotope({
+            // options
+          });
+          // filter items on button click
+          $('.filter-button-group').on( 'click', 'button', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+          });
+       
+       </script>
+  </body>
+
+  </html>

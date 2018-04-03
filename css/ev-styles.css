@@ -1,0 +1,503 @@
+/*Entre Vecions custom CSS*/
+
+/*fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Quicksand:300,400,500,700');
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+body h1, h2, h3, h4, h5{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p, ul{
+    font-size: 17px;
+}
+.ev-nav{
+    /*background: linear-gradient(rgba(0,0,0,0.5),transparent);*/
+    padding: 30px 0px;
+    border-bottom: none;
+    position: absolute;
+    width: 100%;
+}
+
+.ev-nav.inner-page-nav{
+    background: #fff;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    position: relative;
+    border-radius: 0px;
+}
+
+.ev-nav .navbar-brand{
+    height: auto;
+    padding: 0px;
+}
+
+.ev-nav.ev-nav.inner-page-nav a{
+    color: #262262;
+}
+
+.ev-nav.inner-page-nav ul li a:hover{
+    border-bottom: thin solid #262262;
+}
+
+.ev-nav a, .ev-nav .navbar-nav a{
+    color: #fff;
+    font-size: 16px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+    /*padding: 16px 2px 7px 2px;*/
+}
+
+.ev-nav.inner-page-nav .navbar-nav{
+    margin-top: 7px;
+}
+
+.ev-nav ul li a:hover{
+    background: none;
+    border-bottom: thin solid #fff;
+}
+
+.ev-nav .icon-bar{
+    background: white;
+}
+
+.navbar-brand>img{
+    max-width: 65px;
+}
+#ev-header{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)),url('../images/img_people-2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 85vh;
+    /*position: relative;*/
+}
+
+.text-container{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+#ev-header h1{
+    margin-top: 0px;
+    font-size: 72px;
+}
+
+#ev-header h1, #ev-header p{
+    color: white;
+    text-align: center;
+}
+
+#ev-header p{
+    font-size: 28px;
+}
+
+#top-categories{
+   margin-bottom: 70px;
+}
+
+#top-categories ul{
+    transform: translateY(-50%);
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 0px 0px 0px 15px;
+}
+
+#top-categories ul li{
+    display: inline-block;
+    background: #284787;
+    width: 138px;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+#top-categories ul li a{
+    box-shadow: 0px 5px 13px rgba(0, 0, 0, 0.42);
+}
+
+
+.icon-box{
+    padding: 25px 20px;
+    text-align: center; 
+    transition: all 0.45s;
+    display: block;
+}
+
+.icon-box h2{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 0px;
+    transition: background 0.45s;
+    margin-top: 10px;
+}
+
+.icon-box em{
+    font-size: 43px;
+    color:white;
+    transition: color 0.45s;
+}
+
+.icon-box:hover{
+    text-decoration: none;
+}
+
+.icon-box:hover {
+    background: #FE7F2D;
+}
+
+#about{
+ background: linear-gradient(rgba(40,71,135,0.85),rgba(40,71,135,0.85)),url('../images/img_people-1.jpg');
+  /* color: white;*/
+  /*background: #f5f5f5;*/
+    color: white;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.row.no-container{
+    margin: 0px;
+}
+
+.sub-head{
+    text-align: center;
+    padding: 0px 150px;
+    margin-bottom: 50x;
+}
+
+.lead.sub-head{
+    margin-bottom: 50px;
+}
+.curved-box{
+    background: white;
+    padding: 20px 70px 40px ;
+}
+
+#recent-posts{
+   /* background: #eee;*/
+}
+
+#recent-posts.section-two{
+    padding: 70px 0px 90px;
+}
+
+#recent-posts .row{
+    margin: 0px;
+}
+
+.announ-box{
+    position: relative;
+    min-height: 320px;
+    padding: 0px;
+}
+
+
+.announ-box-text{
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.announ-box-text h3{
+    margin: 0px; 
+    text-transform: uppercase;
+}
+
+.announ-box-text p{
+    margin-top: 20px;
+}
+
+.box-one{
+    /*background: #00a7e1;*/
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/img_food-pizza.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.box-two{
+    /*background: #284787;*/
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/img_construction.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0px;
+    
+}
+
+.box-three{
+    /*background: #f2cd5d;*/
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/img_market.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 0px;
+}
+
+.announ-box a{
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    transition: background 0.5s;
+    color: white;
+}
+
+.announ-box a:hover{
+    background: rgba(0,0,0,0.7);
+}
+
+
+
+.section-two{
+    padding: 50px 20px 90px;
+}
+
+hr{
+    border-top: 4px solid #fe7f2d;
+    width: 50px;
+}
+
+.img-wrapper{
+    position: relative;
+}
+
+.img-wrapper:hover .img-overlay{
+    background: rgba(0,0,0,0);
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.img-text-container{
+     position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+}
+
+.img-text{
+    color: white;
+    margin: 0px 0px 10px;
+   
+}
+
+
+.img-wrapper .button-1{
+    opacity: 0;
+}
+
+.img-wrapper:hover .button-1{
+    opacity: 1;
+}
+
+.button-1{
+    display: inline-block;
+    background: #044389;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 4px;
+    transition: opacity 0.5s;
+}
+
+.button-1:hover{
+    color: white;
+}
+
+.innerpage-head{
+    min-height: 350px;
+    padding: 0px 50px;
+    color: white;
+    position: relative;
+}
+
+.innerpage-head hr{
+    text-align: left;
+}
+
+.innerpage-head .container{
+    position: relative;
+    padding: 150px 0px 0px;
+}
+
+.pad-0{
+    padding: 0px;
+}
+
+.servicer-box{
+    padding: 0px;
+    transition: box-shadow 0.45s;
+     margin-bottom: 20px;
+}
+
+.servicer-box:hover{
+    box-shadow: 0px 0px 20px 1px #ccc;
+}
+
+.servicer-box h4{
+    margin: 0px;
+}
+
+.location {
+    font-size: 13px;
+    color: #333;
+}
+
+
+.servicer-box em{
+    margin-right: 10px;
+}
+
+#list-section{
+    padding: 35px;
+}
+
+.filter-buttons{
+    width: 100%;
+    background: none;
+    border: none;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    transition: all 0.45s;
+    outline: none;
+}
+
+.filter-buttons.active{
+    background: #00a7e1;
+    color: white;
+}
+
+#filter-selections{
+    padding: 0px 35px;
+}
+
+#filter-selections ul{
+    list-style: none;
+    padding: 0px;
+}
+
+#filter-selections ul li{
+    border-bottom: thin solid #ccc;
+}
+
+#filter-selections ul li:hover .filter-buttons{
+    background: #00a7e1;
+    color: white;
+}
+#contact-section{
+    padding: 35px;
+}
+.send-button{
+    width: 100%;
+    background: #00a7e1;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+footer{
+    padding: 0px 0px 10px;
+    background: #eee;
+    
+}
+
+footer a{
+    
+}
+
+#footer-nav{
+    padding: 50px 0px;
+    background: #eee;
+}
+
+
+
+#footer-nav ul, #footer-nav p{
+    font-size: 14px; 
+}
+
+
+
+#copyright-div{
+    padding: 1px 0px 0px;
+}
+
+footer .copyright{
+    font-size: 13px;
+    text-align: center;
+}
+
+@media screen and (max-width: 990px){
+    .sub-head{
+        padding: 0px 90px;
+    }
+      
+}
+
+@media screen and (max-width: 666px){
+    #top-categories ul li {
+        margin-bottom: 10px;
+    }
+    .sub-head{
+        padding: 0px 50px;
+    }      
+}
+
+@media screen and (max-width: 400px){
+    #top-categories ul {
+        transform: translateY(-20%);
+    }
+    #top-categories ul li {
+        width: 125px;
+    }
+    #top-categories {
+        margin-bottom: 160px;
+    }
+
+    .sub-head{
+        padding: 0px 20px;
+    }    
+}
+
+@media screen and (max-width: 300px){
+    #top-categories ul li {
+        width: 110px;
+    }
+
+    .icon-box h2{
+        font-size: 13px;
+    }
+    .icon-box {
+        padding: 13px;
+    }
+}
