@@ -21,6 +21,12 @@ p, ul{
     width: 100%;
 }
 
+.navbar-toggle{
+    background: #262262;
+}
+
+
+
 .ev-nav.inner-page-nav{
     background: #fff;
     padding: 10px 0px;
@@ -220,7 +226,7 @@ p, ul{
 
 .box-one{
     /*background: #00a7e1;*/
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/img_food-pizza.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../images/img_market.jpg');
     background-size: cover;
     background-position: center;
     height: 100%;
@@ -352,6 +358,7 @@ hr{
 }
 
 .servicer-box{
+    background: #fff;
     padding: 0px;
     transition: box-shadow 0.45s;
      margin-bottom: 20px;
@@ -377,6 +384,7 @@ hr{
 
 #list-section{
     padding: 35px;
+    background:#eee;
 }
 
 .filter-buttons{
@@ -412,12 +420,39 @@ hr{
     background: #00a7e1;
     color: white;
 }
+
+
 #contact-section{
+    background: linear-gradient(rgba(40,71,135,0.7),rgba(40,71,135,0.7)),url(../images/img_skyscraper.jpg);
+    background-size: cover;
+    height: 91vh;
     padding: 35px;
+    color: white;
+}
+
+#contact-section .innerpage-head{
+    min-height: unset;
+    margin-top: 115px;
+    margin-bottom: 30px;
+}
+
+#contact-section .innerpage-head .container{
+background: none;
+padding: 0px;
+}
+#contact-section .container{
+
+    border-radius: 4px;
+    color: white;
+    background: rgba(35,31,32,0.8);
+}
+
+.form-container{
+    padding: 20px;
 }
 .send-button{
     width: 100%;
-    background: #00a7e1;
+    background: #fe7f2d;
     color: white;
     border-radius: 4px;
     padding: 10px;
@@ -462,6 +497,17 @@ footer .copyright{
         padding: 0px 90px;
     }
       
+}
+
+@media screen and (max-width: 767px){
+    .navbar-collapse{
+        background: rgba(255,255,255,0.8);
+    }
+
+    .navbar-collapse > ul > li > a{
+        
+            color: #262262 !important;
+        }
 }
 
 @media screen and (max-width: 666px){
