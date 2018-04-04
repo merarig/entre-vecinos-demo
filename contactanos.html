@@ -20,6 +20,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
+     <!--Scroll back to top-->
+     <a class="scrollBackToTop" href="#">
+      <em class="fa fa-chevron-up"></em>
+  </a>
       <!--Navbar-->
         <nav class="navbar ev-nav inner-page-nav">
                 <div class="container-fluid container">
@@ -113,19 +117,8 @@
               </div>
           </div>
       </footer>     
-
-       <script>
-          // init Isotope
-          var $grid = $('#directory-list').isotope({
-            // options
-          });
-          // filter items on button click
-          $('.filter-button-group').on( 'click', 'button', function() {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({ filter: filterValue });
-          });
-       
-       </script>
+      <script src="js/entreVecinosScript.js"></script>
+      
   </body>
 
   </html>

@@ -160,6 +160,27 @@ p, ul{
     background: #FE7F2D;
 }
 
+.scrollBackToTop{
+    display: block;
+    height: 60px;
+    width: 50px;
+    background: rgba(51,51,51,0.8);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    transition: opacity 0.35s;
+    padding: 19px 15.5px;
+    position: fixed;
+}
+
+.scrollBackToTop em{
+    color: white;
+    font-size: 20px;
+}
+
 #about{
  background: linear-gradient(rgba(40,71,135,0.85),rgba(40,71,135,0.85)),url('../images/img_people-1.jpg');
   /* color: white;*/
@@ -385,6 +406,10 @@ hr{
 #list-section{
     padding: 35px;
     background:#eee;
+}
+
+.notFoundMessage{
+    display: none;
 }
 
 .filter-buttons{
