@@ -4,24 +4,36 @@ $(document).ready(function(){
     
                if(filterParameter.length != 0){
                   filterItems(filterParameter);
+
+                  var dropdownSelected = $('.dropdownFilter option[value="'+filterParameter+'"]');
     
-                  $('.filter-button-group button[data-filter="'+filterParameter+'"]').addClass('active');
+                  dropdownSelected.parent('.dropdownFilter').val(filterParameter);
+                  //displayChosenFilter(dropdownSelected.text());
                }
                
                
                // init Isotope
               
-              // filter items on button click
-              $('.filter-button-group').on( 'click', 'button', function() {
-                var $thisItem = $(this);
-                if (!$thisItem.hasClass('active')){
-                  $('.filter-button-group button').removeClass('active');
-                  $thisItem.addClass('active');
-                }
-    
-                var filterValue = $(this).attr('data-filter');
-                filterItems(filterValue);
+            
+              var filters ={};
+
+              $('.dropdownFilter').change(function(){
+
+                var filterGroup = $(this).attr("id");
+
+                filters[filterGroup] = $('#'+filterGroup).val();
+
+                var filterValues = concatValues(filters);
+                filterItems(filterValues);
               });
+
+              function concatValues(obj){
+                var value = '';
+                for(var prop in obj){
+                  value += obj[prop];
+                }
+                return value;
+              }
     
               function filterItems(filterSelected){
                 var $grid = $('#directory-list').isotope({
@@ -35,6 +47,11 @@ $(document).ready(function(){
                 else{
                   $('.notFoundMessage').css('display','none');
                 }
+              }
+
+              function displayChosenFilter(categoryChosen){
+                  $('#categoryChosen').text(categoryChosen);
+                 // $('#locationChosen').text(locationChosen);
               }
     
                 function GetURLParameter(){
