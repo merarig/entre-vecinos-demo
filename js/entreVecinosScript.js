@@ -3,7 +3,7 @@ $(document).ready(function(){
         var $grid = $('#directory-list').isotope({
           // options
         });
-        var allServicers = $('.servicer-box');
+      /*  var allServicers = $('.servicer-box');
  
 
         allServicers.each(function(){
@@ -13,10 +13,10 @@ $(document).ready(function(){
           checkClassAndAddImage(classList);
           
 
-        });
+        });*/
         
         
-        function checkClassAndAddImage(classList){
+        /*function checkClassAndAddImage(classList){
           var classArray = classList.split(" ");
           for(var i=0; i < classArray.length; i++){
            var currentClass = classArray[i];
@@ -40,8 +40,7 @@ $(document).ready(function(){
                 break;
             }
           }
-          
-        }
+        }*/
 
                var filterParameter = GetURLParameter();
     
